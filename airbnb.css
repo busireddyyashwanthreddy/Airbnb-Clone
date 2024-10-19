@@ -1,0 +1,234 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: url(Airbnb-img/images/banner.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0, 3)); */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Airbnb-img/images/travels2.jpg); */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Airbnb-img/images/banner.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./Airbnb-Images/images/water-travels.jpg);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(Airbnb-img/images/travels.png); */
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+.register-btn {
+  color: rgb(219, 147, 12);
+  background: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.container {
+  padding: 0 10%;
+}
+.header h1 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500px;
+  text-align: center;
+  padding-top: 20%;
+}
+.search-bar {
+  color: #fff;
+  width: 72%;
+  margin: 30px auto;
+  padding: 5px 10px 5px 30px;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px black;
+}
+.search-bar form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search-bar form input {
+  display: block;
+  outline: none;
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+.search-bar form button {
+  background-color: rgb(249, 158, 11);
+  /* margin-top: 30px; */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.search-bar form button img {
+  width: 15px;
+  margin-top: 7px;
+}
+.location-input {
+  flex-wrap: 1;
+}
+.search-bar form label {
+  font-weight: 700px;
+  color: rgb(232, 151, 1);
+}
+
+/* ---------------Special Places-------- */
+
+.sub-title {
+  margin: 50px 0px 20px;
+  font-size: 20px;
+  font-weight: 500px;
+  color: #333;
+}
+.special-places {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+.special-places div img {
+  width: 100%;
+  border-radius: 10px;
+}
+.special-places div {
+  position: relative;
+}
+.special-places div span {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  transform: translate(-10%, -10%);
+  text-align: center;
+  color: #fff;
+}
+
+/* ---------Trending Places---------- */
+.trending {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+  /* position: relative; */
+}
+.trending div img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* .trending div h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* --------About-------- */
+
+.about {
+  margin: 70px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./Airbnb-img/images/banner-2.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 10%;
+  color: #fff;
+}
+.about h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500px;
+}
+.about p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.about-btn {
+  background-color: rgb(234, 156, 13);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.about h3 span {
+  color: rgb(247, 162, 5);
+}
+.about p span {
+  color: rgb(247, 162, 5);
+  font-size: 25px;
+}
+
+/* -------Histories----------- */
+
+.histories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+.histories div img {
+  border-radius: 10px;
+  width: 100%;
+}
+.about-msg {
+  text-align: center;
+  color: #333;
+  margin: 70px 0;
+  font-size: 14px;
+}
+.about-msg h2 {
+  font-size: 25px;
+  color: rgb(228, 152, 10);
+  margin-bottom: 10px;
+  font-weight: 600px;
+}
+
+.footer {
+  margin: 70px 0 20px;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  color: #999;
+  font-size: 22px;
+  margin: 0 10px;
+}
+.footer hr {
+  background-color: #999;
+  height: 2px;
+  width: 800px;
+  border: 0;
+  margin: 20px 0px;
+}
+.footer p {
+  padding-bottom: 10px;
+  color: #999;
+}
